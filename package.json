@@ -1,0 +1,22 @@
+{
+  "name": "docker-hub-cleanup",
+  "description": "Deletes obsolete Docker Hub deployments",
+  "keywords": [
+    "docker",
+    "docker-hub",
+    "github",
+    "github-actions"
+  ],
+  "version": "1.0.0",
+  "homepage": "https://github.com/ashenm/actions",
+  "url": "https://github.com/ashenm/actions/issues",
+  "author": "Ashen Gunaratne <mail@ashenm.ml> (https://www.ashenm.ml/)",
+  "email": "hosting@ashenm.ml",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "1.x",
+    "@actions/github": "4.x",
+    "superagent": "5.x"
+  }
+}
