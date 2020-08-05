@@ -1,0 +1,14 @@
+name: Docker Hub Deployment Cleanup
+author: Ashen Gunaratne <mail@ashenm.ml>
+description: Deletes obsolete Docker Hub deployments
+
+inputs:
+  repository:
+    description: Docker Hub image repository
+  excludes:
+    description: Docker Hub image exclusion tags
+    default: latest
+
+runs:
+  using: node12
+  main: index.js

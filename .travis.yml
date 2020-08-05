@@ -1,0 +1,19 @@
+language:
+  node_js
+
+install:
+  make install
+
+script:
+  make build
+
+before_deploy:
+  - git config user.name "Ashen Gunaratne"
+  - git config user.email "mail@ashenm.ml"
+
+deploy:
+  provider: script
+  script: make push
+  on:
+    branch: master
+  skip_cleanup: true
