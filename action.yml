@@ -8,6 +8,9 @@ inputs:
   excludes:
     description: Docker Hub image exclusion tags
     default: latest
+  github_token:
+    description: GitHub OAuth token
+    required: true
 
 runs:
   using: node12
